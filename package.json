@@ -1,0 +1,26 @@
+{
+  "name": "tod-utils",
+  "version": "0.1.0",
+  "author": "The Open DAO",
+  "description": "Utils used by The Open DAO projects",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsc",
+    "generate-docs": "ts-readme",
+    "prepublish": "yarn build && yarn generate-docs && npm pack --pack-destination ./npm-packs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-open-dao/tod-utils"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/the-open-dao/tod-utils",
+  "dependencies": {
+    "@babel/runtime": "^7.20.13",
+    "@types/node": "^18.11.19",
+    "ts-readme": "^1.1.3",
+    "typescript": "^4.9.5"
+  }
+}
