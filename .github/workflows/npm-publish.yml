@@ -4,6 +4,9 @@ on:
     branches:
       - main
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -17,6 +20,4 @@ jobs:
       - run: mkdir npm-packs
       - run: yarn install --frozen-lockfile
       - run: npm config set //registry.npmjs.org/:_authToken="$NPM_TOKEN"
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish --access public
