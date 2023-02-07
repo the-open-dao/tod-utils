@@ -1,5 +1,5 @@
 {
-  "name": "tod-utils",
+  "name": "@the-open-dao/tod-utils",
   "version": "0.1.0",
   "author": "The Open DAO",
   "description": "Utils used by The Open DAO projects",
