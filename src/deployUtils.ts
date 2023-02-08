@@ -12,6 +12,7 @@ function replaceEnvExpressions(str: string): string {
             const envName = str.substring(envExprStartIdx + 5 /* "ENV{{" */, envExprEndIdx).trim();
             result += process.env[envName];
             curStrIdx = envExprEndIdx + 2; // "}}"
+            envExprStartIdx = str.indexOf("ENV{{", curStrIdx);
         } else {
             break;
         }

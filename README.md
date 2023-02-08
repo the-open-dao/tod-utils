@@ -2,7 +2,29 @@
 
 <!-- INSERT GENERATED DOCS START -->
 
-### `loadConfigWithExperssions` (function)
+### `toDecimals` (function)
+
+Converts number to decimals.
+
+**Parameters:**
+
+- src (`string | number | bigint`) - Number to convert.
+- decimals (`number`) - Number of decimals.
+
+**returns:** bigint
+
+### `fromDecimals` (function)
+
+Converts decimals to number.
+
+**Parameters:**
+
+- src (`string | number | bigint`) - Number decimals to convert.
+- decimals (`number`) - Number of decimals.
+
+**returns:** string
+
+### `loadConfigWithExpressions` (function)
 
 Loads json config, replacing expressions with evaluated values:
 
