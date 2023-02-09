@@ -18,7 +18,7 @@ function replaceEnvExpressions(str: string): string {
         }
     } while (envExprStartIdx != -1);
 
-    if (curStrIdx < result.length) {
+    if (curStrIdx < str.length) {
         result += str.substring(curStrIdx);
     }
     return result;
