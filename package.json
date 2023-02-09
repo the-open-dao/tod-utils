@@ -1,6 +1,6 @@
 {
   "name": "@the-open-dao/tod-utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "The Open DAO",
   "description": "Utils used by The Open DAO projects",
   "type": "module",
